@@ -8,10 +8,14 @@ light tan: #eeebda
 */
 
 body{
-    font-family: 'Noto Serif', serif;
-    line-height: 1.8;
-    margin: 0;
-    background-color: #eeebda;
+  font-family: 'Noto Serif', serif;
+  line-height: 1.8;
+  margin: 0;
+  background-color: #eeebda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 h1, h2, h3{
     font-family: "Josefin Sans", sans-serif;
@@ -32,6 +36,7 @@ img{
 }
 #site-header{
   width: 950px;
+  float: center;
 }
 #site-header div{
     text-align: center;
@@ -55,12 +60,13 @@ img{
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
     font-family: "Dancing Script", sans-serif;
+    font-size: 90%;
 }
 #main-navigation{
     background: #444;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 #main-navigation a{
@@ -68,12 +74,12 @@ img{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
 }
 #main-navigation #logo{
     margin-right: 400px;
-    font-size: 20px;
+    flex-wrap: wrap;
 }
 main{
     padding: 20px;
@@ -130,8 +136,9 @@ article time{
 }
 article img{
   float: right;
-  width: 190px;
+  width: 300px;
   height: auto;
+  padding-left: 10px;
 }
 article footer p{
   line-height: 1em;
@@ -143,8 +150,11 @@ article footer p{
   text-transform: uppercase;
 }
 #site-footer{
-    color: white;
     background: #333;
+    width: 100%;
+    height: 1em;
     display: flex;
     justify-content: center;
+    color: white;
+    padding: 1em 0em;
 }
